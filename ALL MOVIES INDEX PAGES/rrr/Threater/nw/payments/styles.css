@@ -1,0 +1,269 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #151515;
+    color: white;
+}
+
+.container {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+header {
+    background-color: #E50916;
+    color: #151515;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    height: 25px;
+    margin-bottom: 500px;
+}
+
+.logo {
+    font-size: 1.0rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    position: relative; 
+    display: flex; 
+    margin-top: -8px;
+}
+
+.location {
+    font-size: 0.8rem;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    display: ruby-base-container;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #E50916;
+}
+
+
+.contact {
+    height: 100vh;
+    color: #151515;
+    padding: 20px;
+}
+
+.sticky {
+    color: #E50916;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    z-index: 1000;
+}
+
+header.sticky {
+    display: none;
+    background-color: transparent;
+    color: #E50916;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.sticky .logo {
+    font-size: 1.2rem;
+}
+
+.active {
+    color: #E50916;
+}
+
+main {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contact-details, .payment-options, .offers {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #202020;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="email"], input[type="tel"], input[type="text"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #E50916;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: #4c4747c8;
+}
+
+.payment-options .banks {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.payment-options .banks input {
+    display: none;
+}
+
+.payment-options .banks label {
+    cursor: pointer;
+}
+
+.payment-options .banks label img {
+    width: 50px;
+    height: 50px;
+}
+
+#allBanks {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.order-summary {
+    width: 350px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-left: 50px;
+    color: #151515;
+}
+
+.order-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.movie-details {
+    display: flex;
+    align-items: center;
+}
+
+.movie-info {
+    margin-left: 15px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.details {
+    margin: 5px 0;
+}
+
+.ticket-details, .price-details {
+    margin-bottom: 20px;
+}
+
+.price-details {
+    font-weight: bold;
+}
+
+.heading-pay {
+    align-self: flex-start;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.apply {
+    display: flex;
+    align-items: center;
+}
+
+.apply input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+.apply button {
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    main {
+        width: 90%;
+    }
+    
+    .order-summary {
+        width: 90%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devara: Part 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-XXX" crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <a href="file:///W:\Semester 2\UID\TicketVenumma\home.html" class="logo">TicketVenuma</a>
+        <span class="location">Coimbatore</span>
+        <nav>
+            <ul>
+                <li><a href="file:///W:\Semester 2\UID\TicketVenumma\home.html">Home</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="movie-header">
+            <div class="overlay"></div>
+            <img src="https://m.media-amazon.com/images/M/MV5BYmYyYzZkZTEtOGNjYy00ZWUyLWFiYzYtYjViMzU1ZDk4ODhiXkEyXkFqcGdeQXVyNzI4NjYyMzk@._V1_.jpg" alt="OG" class="poster">
+            <div class="movie-info">
+                <h1 id="movie-title">Devara: Part 1</h1>
+                <div class="rating-container">
+                    <p class="rating">9.0/10 (195.3K Votes)</p>
+                    <button id="rate-now-button" class="btn">Rate Now</button>
+                </div>
+                <div id="rating-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" id="close-rating-form-btn">Submit</span>
+                        <iframe src="rating_form.html"></iframe>
+                    </div>
+                </div>
+                <p><b>🕰️2h 30m</p></b>
+                <p class="genre">Action,Thriller</p>
+                <p class="release-date">Release Date: 10th October, 2024</p>
+                <div class="languages">
+                    <span>Languages:</span>
+                    <span>Telugu</span>
+                    <span>Hindi</span>
+                    <span>Tamil</span>
+                    <span> Kannada</span>
+                    <span>Malayalam</span>
+                </div>
+                <div class="formats">
+                    <span>Formats: </span>
+                    <span>2D</span>
+                </div>
+                <div class="actions">
+                    <button id="book-tickets-button" class="btn">Book Tickets</button>
+                    <button id="watch-trailer-button" class="btn play-btn"><i class="fas fa-play"></i> Trailer</button>
+                </div>
+            </div>
+        </div>
+        <div class="movie-description">
+            <h2>About the movie</h2>
+            <p>
+                Devara is a Telugu movie starring Jr. NTR, Saif Ali Khan and Janhvi Kapoor in prominent roles. It is written and directed by Koratala Siva.
+            </p>
+        </div>
+        <div class="cast">
+            <h2>Cast</h2>
+            <div id="cast-list" class="cast-list">
+            </div>
+        </div>
+        <div class="crew">
+            <h2>Crew</h2>
+            <div id="crew-list" class="crew-list">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

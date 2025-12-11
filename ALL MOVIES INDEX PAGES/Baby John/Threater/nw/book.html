@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Ticket Booking Website</title>
+</head>
+<body>
+    <header>
+        <a href="file:///W:\Semester 2\UID\TicketVenumma\home.html" class="logo">TicketVenuma</a>
+        <span class="location">Coimbatore</span>
+    </header>
+    <div class="book">
+        <div class="left">
+            <img id="posterImage" src="img/jawan.jpg" alt="Movie Poster">
+            <div class="play">
+                <i class="bi bi-play-fill" id="play"></i>
+            </div>
+            <div class="cont">
+                <div class="cast">
+                    <h3>Cast</h3>
+                    <ul id="castList"></ul>
+                </div>
+                <div class="crew">
+                    <h3>Crew</h3>
+                    <ul id="crewList"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="top">
+                <div class="head_time">
+                    <h1><div class="title" id="movieTitle">Jawan</div></h1>
+                    <div class="time">
+                        <h6><i class="bi bi-clock"></i> 165 minutes</h6>
+                        <button>PG-13</button>
+                    </div>
+                </div>
+                <div class="date_type">
+                    <h3><div class="genre" id="movieGenre">genre</div></h3>
+                    <h3><div class="releaseDate" id="movieReleaseDate">releaseDate</div></h3>
+                    <h3><div class="theater_name" id="theater_name">theater_name</div></h3>
+                    <h3><div class="date" id="date">date</div></h3>
+                    <h3><div class="showtime" id="showtime">show</div></h3>
+                </div>
+                <br><br>
+            </div>
+            <br><br><br><br><br><br><br><br><br>
+            <div class="bottom">
+                <div class="screen" id="screen">
+                    Screen
+                </div>
+                <!-- chairs  -->
+                <div class="chair" id="chair">
+                    <div class="chair economy">
+                        <h3>Economy Seats - 175</h3>
+                        </div>
+                        <div class="row">
+                            <span>A</span>
+                            <li class="seat" data-type="economy">A1</li>
+                            <li class="seat" data-type="economy">A2</li>
+                            <li class="seat" data-type="economy">A3</li>
+                            <li class="seat" data-type="economy">A4</li>
+                            <li class="seat" data-type="economy">A5</li>
+                            <li class="seat" data-type="economy">A6</li>
+                            <li class="seat" data-type="economy">A7</li>
+                            <li class="seat" data-type="economy">A8</li>
+                            <li class="seat" data-type="economy">A9</li>
+                            <li class="seat" data-type="economy">A10</li>
+                            <li class="seat" data-type="economy">A11</li>
+                            <li class="seat" data-type="economy">A12</li>
+                            <li class="seat" data-type="economy">A13</li>
+                            <li class="seat" data-type="economy">A14</li>
+                            <li class="seat" data-type="economy">A15</li>
+                            <li class="seat" data-type="economy">A16</li>
+                            <li class="seat" data-type="economy">A17</li>
+                            <li class="seat" data-type="economy">A18</li>
+                            <li class="seat" data-type="economy">A19</li>
+                            <li class="seat" data-type="economy">A20</li>
+                            <li class="seat" data-type="economy">A21</li>
+                            <li class="seat" data-type="economy">A22</li>
+                            <li class="seat" data-type="economy">A23</li>
+                            <li class="seat" data-type="economy">A24</li>
+                            <span>A</span>
+                        </div>
+                        <div class="row">
+                            <span>B</span>
+                            <li class="seat" data-type="economy">B1</li>
+                            <li class="seat" data-type="economy">B2</li>
+                            <li class="seat" data-type="economy">B3</li>
+                            <li class="seat" data-type="economy">B4</li>
+                            <li class="seat" data-type="economy">B5</li>
+                            <li class="seat" data-type="economy">B6</li>
+                            <li class="seat" data-type="economy">B7</li>
+                            <li class="seat" data-type="economy">B8</li>
+                            <li class="seat" data-type="economy">B9</li>
+                            <li class="seat" data-type="economy">B10</li>
+                            <li class="seat" data-type="economy">B11</li>
+                            <li class="seat" data-type="economy">B12</li>
+                            <li class="seat" data-type="economy">B13</li>
+                            <li class="seat" data-type="economy">B14</li>
+                            <li class="seat" data-type="economy">B15</li>
+                            <li class="seat" data-type="economy">B16</li>
+                            <li class="seat" data-type="economy">B17</li>
+                            <li class="seat" data-type="economy">B18</li>
+                            <li class="seat" data-type="economy">B19</li>
+                            <li class="seat" data-type="economy">B20</li>
+                            <li class="seat" data-type="economy">B21</li>
+                            <li class="seat" data-type="economy">B22</li>
+                            <li class="seat" data-type="economy">B23</li>
+                            <li class="seat" data-type="economy">B24</li>
+                            <span>B</span>
+                        </div>
+                        <div class="row">
+                            <span>C</span>
+                            <li class="seat" data-type="economy">C1</li>
+                            <li class="seat" data-type="economy">C2</li>
+                            <li class="seat" data-type="economy">C3</li>
+                            <li class="seat" data-type="economy">C4</li>
+                            <li class="seat" data-type="economy">C5</li>
+                            <li class="seat" data-type="economy">C6</li>
+                            <li class="seat" data-type="economy">C7</li>
+                            <li class="seat" data-type="economy">C8</li>
+                            <li class="seat" data-type="economy">C9</li>
+                            <li class="seat" data-type="economy">C10</li>
+                            <li class="seat" data-type="economy">C11</li>
+                            <li class="seat" data-type="economy">C12</li>
+                            <li class="seat" data-type="economy">C13</li>
+                            <li class="seat" data-type="economy">C14</li>
+                            <li class="seat" data-type="economy">C15</li>
+                            <li class="seat" data-type="economy">C16</li>
+                            <li class="seat" data-type="economy">C17</li>
+                            <li class="seat" data-type="economy">C18</li>
+                            <li class="seat" data-type="economy">C19</li>
+                            <li class="seat" data-type="economy">C20</li>
+                            <li class="seat" data-type="economy">C21</li>
+                            <li class="seat" data-type="economy">C22</li>
+                            <li class="seat" data-type="economy">C23</li>
+                            <li class="seat" data-type="economy">C24</li>
+                            <span>C</span>
+                        </div>
+                        <div class="row">
+                            <span>D</span>
+                            <li class="seat" data-type="economy">D1</li>
+                            <li class="seat" data-type="economy">D2</li>
+                            <li class="seat" data-type="economy">D3</li>
+                            <li class="seat" data-type="economy">D4</li>
+                            <li class="seat" data-type="economy">D5</li>
+                            <li class="seat" data-type="economy">D6</li>
+                            <li class="seat" data-type="economy">D7</li>
+                            <li class="seat" data-type="economy">D8</li>
+                            <li class="seat" data-type="economy">D9</li>
+                            <li class="seat" data-type="economy">D10</li>
+                            <li class="seat" data-type="economy">D11</li>
+                            <li class="seat" data-type="economy">D12</li>
+                            <li class="seat" data-type="economy">D13</li>
+                            <li class="seat" data-type="economy">D14</li>
+                            <li class="seat" data-type="economy">D15</li>
+                            <li class="seat" data-type="economy">D16</li>
+                            <li class="seat" data-type="economy">D17</li>
+                            <li class="seat" data-type="economy">D18</li>
+                            <li class="seat" data-type="economy">D19</li>
+                            <li class="seat" data-type="economy">D20</li>
+                            <li class="seat" data-type="economy">D21</li>
+                            <li class="seat" data-type="economy">D22</li>
+                            <li class="seat" data-type="economy">D23</li>
+                            <li class="seat" data-type="economy">D24</li>
+                            <span>D</span>
+                        </div>
+                    
+                    <div class="chair standard">
+                        <h3>Standard Seats - 250</h3>
+                        <div class="row">
+                            <span>E</span>
+                            <li class="seat" data-type="standard">E1</li>
+                            <li class="seat" data-type="standard">E2</li>
+                            <li class="seat" data-type="standard">E3</li>
+                            <li class="seat" data-type="standard">E4</li>
+                            <li class="seat" data-type="standard">E5</li>
+                            <li class="seat" data-type="standard">E6</li>
+                            <li class="seat" data-type="standard">E7</li>
+                            <li class="seat" data-type="standard">E8</li>
+                            <li class="seat" data-type="standard">E9</li>
+                            <li class="seat" data-type="standard">E10</li>
+                            <li class="seat" data-type="standard">E11</li>
+                            <li class="seat" data-type="standard">E12</li>
+                            <li class="seat" data-type="standard">E13</li>
+                            <li class="seat" data-type="standard">E14</li>
+                            <li class="seat" data-type="standard">E15</li>
+                            <li class="seat" data-type="standard">E16</li>
+                            <li class="seat" data-type="standard">E17</li>
+                            <li class="seat" data-type="standard">E18</li>
+                            <li class="seat" data-type="standard">E19</li>
+                            <li class="seat" data-type="standard">E20</li>
+                            <li class="seat" data-type="standard">E21</li>
+                            <li class="seat" data-type="standard">E22</li>
+                            <li class="seat" data-type="standard">E23</li>
+                            <li class="seat" data-type="standard">E24</li>
+                            <span>E</span>
+                        </div>
+                        <div class="row">
+                            <span>F</span>
+                            <li class="seat" data-type="standard">F1</li>
+                            <li class="seat" data-type="standard">F2</li>
+                            <li class="seat" data-type="standard">F3</li>
+                            <li class="seat" data-type="standard">F4</li>
+                            <li class="seat" data-type="standard">F5</li>
+                            <li class="seat" data-type="standard">F6</li>
+                            <li class="seat" data-type="standard">F7</li>
+                            <li class="seat" data-type="standard">F8</li>
+                            <li class="seat" data-type="standard">F9</li>
+                            <li class="seat" data-type="standard">F10</li>
+                            <li class="seat" data-type="standard">F11</li>
+                            <li class="seat" data-type="standard">F12</li>
+                            <li class="seat" data-type="standard">F13</li>
+                            <li class="seat" data-type="standard">F14</li>
+                            <li class="seat" data-type="standard">F15</li>
+                            <li class="seat" data-type="standard">F16</li>
+                            <li class="seat" data-type="standard">F17</li>
+                            <li class="seat" data-type="standard">F18</li>
+                            <li class="seat" data-type="standard">F19</li>
+                            <li class="seat" data-type="standard">F20</li>
+                            <li class="seat" data-type="standard">F21</li>
+                            <li class="seat" data-type="standard">F22</li>
+                            <li class="seat" data-type="standard">F23</li>
+                            <li class="seat" data-type="standard">F24</li>
+                            <span>F</span>
+                        </div>
+                        <div class="row">
+                            <span>G</span>
+                            <li class="seat" data-type="standard">G1</li>
+                            <li class="seat" data-type="standard">G2</li>
+                            <li class="seat" data-type="standard">G3</li>
+                            <li class="seat" data-type="standard">G4</li>
+                            <li class="seat" data-type="standard">G5</li>
+                            <li class="seat" data-type="standard">G6</li>
+                            <li class="seat" data-type="standard">G7</li>
+                            <li class="seat" data-type="standard">G8</li>
+                            <li class="seat" data-type="standard">G9</li>
+                            <li class="seat" data-type="standard">G10</li>
+                            <li class="seat" data-type="standard">G11</li>
+                            <li class="seat" data-type="standard">G12</li>
+                            <li class="seat" data-type="standard">G13</li>
+                            <li class="seat" data-type="standard">G14</li>
+                            <li class="seat" data-type="standard">G15</li>
+                            <li class="seat" data-type="standard">G16</li>
+                            <li class="seat" data-type="standard">G17</li>
+                            <li class="seat" data-type="standard">G18</li>
+                            <li class="seat" data-type="standard">G19</li>
+                            <li class="seat" data-type="standard">G20</li>
+                            <li class="seat" data-type="standard">G21</li>
+                            <li class="seat" data-type="standard">G22</li>
+                            <li class="seat" data-type="standard">G23</li>
+                            <li class="seat" data-type="standard">G24</li>
+                            <span>G</span>
+                        </div>
+                        <div class="row">
+                            <span>H</span>
+                            <li class="seat" data-type="standard">H1</li>
+                            <li class="seat" data-type="standard">H2</li>
+                            <li class="seat" data-type="standard">H3</li>
+                            <li class="seat" data-type="standard">H4</li>
+                            <li class="seat" data-type="standard">H5</li>
+                            <li class="seat" data-type="standard">H6</li>
+                            <li class="seat" data-type="standard">H7</li>
+                            <li class="seat" data-type="standard">H8</li>
+                            <li class="seat" data-type="standard">H9</li>
+                            <li class="seat" data-type="standard">H10</li>
+                            <li class="seat" data-type="standard">H11</li>
+                            <li class="seat" data-type="standard">H12</li>
+                            <li class="seat" data-type="standard">H13</li>
+                            <li class="seat" data-type="standard">H14</li>
+                            <li class="seat" data-type="standard">H15</li>
+                            <li class="seat" data-type="standard">H16</li>
+                            <li class="seat" data-type="standard">H17</li>
+                            <li class="seat" data-type="standard">H18</li>
+                            <li class="seat" data-type="standard">H19</li>
+                            <li class="seat" data-type="standard">H20</li>
+                            <li class="seat" data-type="standard">H21</li>
+                            <li class="seat" data-type="standard">H22</li>
+                            <li class="seat" data-type="standard">H23</li>
+                            <li class="seat" data-type="standard">H24</li>
+                            <span>H</span>
+                        </div>
+                        <div class="row">
+                            <span>I</span>
+                            <li class="seat" data-type="standard">I1</li>
+                            <li class="seat" data-type="standard">I2</li>
+                            <li class="seat" data-type="standard">I3</li>
+                            <li class="seat" data-type="standard">I4</li>
+                            <li class="seat" data-type="standard">I5</li>
+                            <li class="seat" data-type="standard">I6</li>
+                            <li class="seat" data-type="standard">I7</li>
+                            <li class="seat" data-type="standard">I8</li>
+                            <li class="seat" data-type="standard">I9</li>
+                            <li class="seat" data-type="standard">I10</li>
+                            <li class="seat" data-type="standard">I11</li>
+                            <li class="seat" data-type="standard">I12</li>
+                            <li class="seat" data-type="standard">I13</li>
+                            <li class="seat" data-type="standard">I14</li>
+                            <li class="seat" data-type="standard">I15</li>
+                            <li class="seat" data-type="standard">I16</li>
+                            <li class="seat" data-type="standard">I17</li>
+                            <li class="seat" data-type="standard">I18</li>
+                            <li class="seat" data-type="standard">I19</li>
+                            <li class="seat" data-type="standard">I20</li>
+                            <li class="seat" data-type="standard">I21</li>
+                            <li class="seat" data-type="standard">I22</li>
+                            <li class="seat" data-type="standard">I23</li>
+                            <li class="seat" data-type="standard">I24</li>
+                            <span>I</span>
+                        </div>
+                    </div>
+                    <div class="chair premium">
+                        <h3>Premium Seats - 350</h3>
+                        <div class="row">
+                            <span>J</span>
+                            <li class="seat" data-type="premium">J1</li>
+                            <li class="seat" data-type="premium">J2</li>
+                            <li class="seat" data-type="premium">J3</li>
+                            <li class="seat" data-type="premium">J4</li>
+                            <li class="seat" data-type="premium">J5</li>
+                            <li class="seat" data-type="premium">J6</li>
+                            <li class="seat" data-type="premium">J7</li>
+                            <li class="seat" data-type="premium">J8</li>
+                            <li class="seat" data-type="premium">J9</li>
+                            <li class="seat" data-type="premium">J10</li>
+                            <li class="seat" data-type="premium">J11</li>
+                            <li class="seat" data-type="premium">J12</li>
+                            <li class="seat" data-type="premium">J13</li>
+                            <li class="seat" data-type="premium">J14</li>
+                            <li class="seat" data-type="premium">J15</li>
+                            <li class="seat" data-type="premium">J16</li>
+                            <li class="seat" data-type="premium">J17</li>
+                            <li class="seat" data-type="premium">J18</li>
+                            <li class="seat" data-type="premium">J19</li>
+                            <li class="seat" data-type="premium">J20</li>
+                            <li class="seat" data-type="premium">J21</li>
+                            <li class="seat" data-type="premium">J22</li>
+                            <li class="seat" data-type="premium">J23</li>
+                            <li class="seat" data-type="premium">J24</li>
+                            <span>J</span>
+                        </div>
+                        <div class="row">
+                            <span>k</span>
+                            <li class="seat" data-type="premium">k1</li>
+                            <li class="seat" data-type="premium">k2</li>
+                            <li class="seat" data-type="premium">k3</li>
+                            <li class="seat" data-type="premium">k4</li>
+                            <li class="seat" data-type="premium">k5</li>
+                            <li class="seat" data-type="premium">k6</li>
+                            <li class="seat" data-type="premium">k7</li>
+                            <li class="seat" data-type="premium">k8</li>
+                            <li class="seat" data-type="premium">k9</li>
+                            <li class="seat" data-type="premium">k10</li>
+                            <li class="seat" data-type="premium">k11</li>
+                            <li class="seat" data-type="premium">k12</li>
+                            <li class="seat" data-type="premium">k13</li>
+                            <li class="seat" data-type="premium">k14</li>
+                            <li class="seat" data-type="premium">k15</li>
+                            <li class="seat" data-type="premium">k16</li>
+                            <li class="seat" data-type="premium">k17</li>
+                            <li class="seat" data-type="premium">k18</li>
+                            <li class="seat" data-type="premium">k19</li>
+                            <li class="seat" data-type="premium">k20</li>
+                            <li class="seat" data-type="premium">k21</li>
+                            <li class="seat" data-type="premium">k22</li>
+                            <li class="seat" data-type="premium">k23</li>
+                            <li class="seat" data-type="premium">k24</li>
+                            <span>k</span>
+                        </div>
+                    </div>
+                    <br>
+                    <span id="price_display">Total Price: $0</span>
+                    <button class="btn" id="book_ticket">Book Ticket</button>
+                    <button class="btn" id="back_ticket">Back Ticket</button>
+                </div>
+            </div>    
+        </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyShow Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="file:///W:\Semester 2\UID\TicketVenumma\home.html" class="logo">TicketVenuma</a>
+        <span class="location">Coimbatore</span>
+        <nav>
+            <ul>
+                <li><a id="home" href="file:///W:\Semester 2\UID\TicketVenumma\home.html">Home</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <section class="contact-details">
+                <h2>Share your Contact Details</h2>
+                <form id="contactForm">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    <label for="phone">Mobile Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Mobile Number" required>
+                    <button type="submit" id="makePayment">Make Payment</button>
+                </form>
+                <div id="error-message" style="color: red;"></div>                
+            </section>
+
+            <section class="offers">
+                <h2>Unlock offers or Apply Promocodes</h2>
+                <div class="apply">
+                    <input type="text" placeholder="Enter Promocode Here">
+                    <button>Apply</button>
+                </div>
+            </section>
+
+            <br><h1 class="heading-pay">Payment: </h1>
+            <section class="payment-options">
+                <h3>Payment Methods</h3>
+                <div class="banks">
+                    <input type="radio" name="bank" id="UPI" value="UPI" checked>
+                    <label for="UPI"><img src="https://static-00.iconduck.com/assets.00/upi-id-icon-2048x2048-fcpa38th.png" alt="UPI"></label>
+                    <input type="radio" name="bank" id="Netbanking" value="Netbanking">
+                    <label for="Netbanking"><img src="https://png.pngtree.com/png-vector/20190301/ourmid/pngtree-vector-internet-banking-icon-png-image_747105.jpg" alt="Netbanking"></label>
+                    <input type="radio" name="bank" id="Wallet" value="Wallet">
+                    <label for="Wallet"><img src="https://png.pngtree.com/png-clipart/20190904/original/pngtree-orange-wallet-icon-png-image_4462385.jpg" alt="Wallet"></label>
+                    <input type="radio" name="bank" id="EMI" value="EMI">
+                    <label for="EMI"><img src="https://cdn-icons-png.flaticon.com/512/1735/1735902.png" alt="EMI"></label>
+                </div>
+                <select id="allBanks">
+                    <option value="UPI">UPI</option>
+                    <option value="Netbanking">Netbanking</option>
+                    <option value="Wallet">Wallet</option>
+                    <option value="EMI">EMI</option>
+                </select>
+            </section>
+        </main>
+        <aside class="order-summary">
+            <div class="order-header">
+                <h2>Order Summary</h2>
+            </div>
+            <div class="ticket-details">
+                <p id="movie-title" class="title"></p>
+                <p id="genre" class="details"></p>
+                <h3>Ticket Details</h3>
+                <p><strong>Theater:</strong> <span id="theater"></span></p>
+                <p><strong>Date/Show:</strong> <span id="ticket-date-show"></span></p>
+                <p><strong>Seats:</strong> <span id="seats"></span></p>
+            </div>
+            <div class="price-details">
+                <h3>Price Details</h3>
+                <p id="total-price"></p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/220px-QR_code_for_mobile_English_Wikipedia.svg.png" alt="qr">
+            </div>
+        </aside>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

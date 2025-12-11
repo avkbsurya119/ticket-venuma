@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>STREAMLAb</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section class="home">
+    <div class="headerbg ">
+      <header>
+        <div class="container ">
+          <div class="navbar flex1">
+            <div class="logo">
+              <img src="assests/logo.png" alt="">
+            </div>
+            <nav>
+              <ul id="menuitem">
+                
+              </ul>
+            </nav>
+            <span class="fa fa-bars" onclick="menutoggle()"></span>
+          </div>
+        </div>
+      </header>
+      <div class="home_content mtop">
+        <div class="container">
+          <div class="left">
+            <h1>Kalki 2898 AD</h1>
+            <div class="time flex">
+              <label>U/A</label>
+              <i class="fas fa-circle"></i>
+              <span>2hrs 40mins</span>
+              <i class="fas fa-circle"></i>
+              <p>27th JUNE 2024</p>
+              <i class="fas fa-circle"></i>
+              <button>Action,  Sci-Fi,  Thriller</button>
+            </div>
+            <p>“Kalki 2898 AD” is an Indian epic science fiction action film directed by Nag Ashwin. The movie, produced by Vyjayanthi Movies, is set in a post-apocalyptic world in the year 2898 AD. 
+              Inspired by Hindu mythology, it features a star-studded cast including Prabhas, Deepika Padukone, and Amitabh Bachchan</p>
+            <div class="button flex">
+              <button class="btn" onclick="redirectToPage()">BOOK TICKETS</button>
+                <script>
+                  function redirectToPage() {
+                    window.location.href = 'ALL MOVIES INDEX PAGES/KALKI/index.html';
+                  }
+                </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "200px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 50);
+    })
+  </script>
+  <section class="popular mtop">
+    <div class="container ">
+      <div class="heading flex1">
+        <h2>New Release</h2>
+      </div>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <a href="ALL MOVIES INDEX PAGES/OG/index.html">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://www.koimoi.com/wp-content/new-galleries/2024/02/pawan-kalyans-fans-rejoice-as-og-release-date-announced-jana-sena-supporters-raise-concerns.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" ></i>
+            </div>
+            <div class="text">
+              <h3>They Call Him OG</h3>
+              <div class="time flex">
+                <span>2hrs 27mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action,Thriller</a>
+              </div>
+            </div>
+          </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="ALL MOVIES INDEX PAGES/Kanguva/index.html">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://www.koimoi.com/wp-content/new-galleries/2023/07/kanguva-poster-suriya-turns-into-a-mighty-warrior-as-he-surprises-fans-with-his-first-look-on-his-48th-birthday.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+            <div class="content">
+              <i id="palybtn" ></i>
+            </div>
+            <div class="text">
+              <h3>Kanguva</h3>
+              <div class="time flex">
+                <span>2hrs 45mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action,Sci-fi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </a>
+        <div class="item">
+          <a href="ALL MOVIES INDEX PAGES/SALAAR/index.html">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://images.indianexpress.com/2023/11/salaar-trailer-release-date-1600.jpeg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+            <div class="content">
+              <i id="palybtn" ></i>
+            </div>
+            <div class="text">
+              <h3>Salaar</h3>
+              <div class="time flex">
+                <span>2hrs 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action,Thriller</a>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="item">
+          <div class="box">
+            <a href="ALL MOVIES INDEX PAGES/Double/index.html">
+            <div class="imgBox">
+              <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00359660-qctetpdlwz-landscape.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" ></i>
+            </div>
+            <div class="text">
+              <h3>Double Ismart</h3>
+              <div class="time flex">
+                <span>2hrs 24mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </a>
+          </div>
+        </div>
+        <div class="item">
+          <a href="ALL MOVIES INDEX PAGES/Guntur Karam/index.html">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://goldandhra.com/wp-content/uploads/2023/12/Mahesh-Babus-New-Striking-Poster-Of-Guntur-Kaaram-Revealed.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" ></i>
+            </div>
+            <div class="text">
+              <h3>Guntur Karam</h3>
+              <div class="time flex">
+                <span>2hrs 31mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action,Drama</a>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="item" >
+          <a href="ALL MOVIES INDEX PAGES/Pushpa 2/index.html">
+          <div class="box" >
+            <div class="imgBox">
+              <img src="https://static.tnn.in/thumb/msid-109110665,thumbsize-90036,width-1280,height-720,resizemode-75/109110665.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+            <div class="content">
+              <i id="palybtn" ></i>
+            </div>
+            <div class="text">
+              <h3>Pushpa 2: The Rule</h3>
+              <div class="time flex">
+                <span>2hrs 28mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="item">
+          <a href="ALL MOVIES INDEX PAGES/Animal/index.html">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://images.indianexpress.com/2023/11/animal-27112023.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" ></i>
+            </div>
+            <div class="text">
+              <h3>Animal</h3>
+              <div class="time flex">
+                <span>3hr 10min</span>
+                <i class="fas fa-circle"></i>
+                <a>Violence,Drama</a>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="item">
+          <a href="ALL MOVIES INDEX PAGES/Brahmastra/index.html">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://static.toiimg.com/photo/92219097.jpeg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" ></i>
+            </div>
+            <div class="text">
+              <h3>Brahmastra</h3>
+              <div class="time flex">
+                <span>2hrs 42mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Fantasy,Drama</a>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="item">
+          <a href="ALL MOVIES INDEX PAGES/Saaho/index.html">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://assets.thehansindia.com/hansindia-bucket/h-upload/feeds/2019/07/25/199218-saaho.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" ></i>
+            </div>
+            <div class="text">
+              <h3>Saaho</h3>
+              <div class="time flex">
+                <span>2hrs 37mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action,Thriller,Sci-Fi</a>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="item">
+          <a href="ALL MOVIES INDEX PAGES/Devara/index.html">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://static.tnn.in/thumb/msid-106437635,thumbsize-53022,width-1280,height-720,resizemode-75/106437635.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" ></i>
+            </div>
+            <div class="text">
+              <h3>Devara</h3>
+              <div class="time flex">
+                <span>2hrs 33mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action,Thriller</a>
+              </div>
+            </div>
+          </div>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="popular mtop">
+    <div class="container ">
+      <div class="heading flex1">
+        <h2>Most rated</h2>
+      </div>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <a href="ALL MOVIES INDEX PAGES/Indian 2/index.html">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202405/kamal-haasan-shankar-indian-2-204758633-16x9_0.jpg?VersionId=YOWwfKQEjyptSMJ8omsnSymGboo2NYMa" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" ></i>
+            </div>
+            <div class="text">
+              <h3>Indian 2</h3>
+              <div class="time flex">
+                <span>2hrs 42mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action,Drama</a>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="item">
+          <a href="ALL MOVIES INDEX PAGES/Vikram/index.html">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://static.toiimg.com/photo/91660096.jpeg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+            
+
+            <div class="content">
+              <i id="palybtn" ></i>
+            </div>
+            <div class="text">
+              <h3>Vikram</h3>
+              <div class="time flex">
+                <span>2hrs 41mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action,Thriller</a>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="item">
+          <a href="ALL MOVIES INDEX PAGES/Jawan/index.html">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://m.media-amazon.com/images/M/MV5BZjExZWFlMTEtN2M1NC00NzQxLThmYjAtNmQ2ZGNmOTNiMzg1XkEyXkFqcGdeQXVyMTQzMTgzNzUy._V1_.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+            <div class="content">
+              <i id="palybtn" ></i>
+            </div>
+            <div class="text">
+              <h3>jawan</h3>
+              <div class="time flex">
+                <span>2hrs 43mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="item">
+          <a href="ALL MOVIES INDEX PAGES/Sarfira/index.html">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://i.ytimg.com/vi/X7sc-TCUAsM/maxresdefault.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" ></i>
+            </div>
+            <div class="text">
+              <h3>Sarfira</h3>
+              <div class="time flex">
+                <span>1hrs 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Biography</a>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="item">
+          <a href="ALL MOVIES INDEX PAGES/KGF 2/index.html">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://cdn.telanganatoday.com/wp-content/uploads/2022/04/IMAX-unveils-Yashs-dhamakedaar-fierce-look-in-K.G.F.-Chapter-2-poster.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" ></i>
+            </div>
+            <div class="text">
+              <h3>KGF:Chatper 2</h3>
+              <div class="time flex">
+                <span>2hrs 37mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action,Thriller,Drama</a>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="item">
+          <a href="ALL MOVIES INDEX PAGES/Avengers/index.html">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://images.squarespace-cdn.com/content/v1/59d7e2c7e45a7c0ce235bb55/1556292830701-LR849KLULMTLSWOSGSX0/Avengers-Endgame-Film-Review.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" ></i>
+            </div>
+            <div class="text">
+              <h3>Avengers Endgame</h3>
+              <div class="time flex">
+                <span>3hrs</span>
+                <i class="fas fa-circle"></i>
+                <a>Action,Sci-Fi</a>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="item">
+          <a href="ALL MOVIES INDEX PAGES/Ala Vaikuntapuramlo/index.html">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://wallpapers.com/images/hd/ala-vaikunthapurramuloo-bantu-ammu-poster-hkvsons563ap6g0o.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" ></i>
+            </div>
+            <div class="text">
+              <h3>Ala Vaikuntapruamloo</h3>
+              <div class="time flex">
+                <span>2hrs 40mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action,Drama</a>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+        
+        
+        <div class="item">
+          <a href="ALL MOVIES INDEX PAGES/Baby John/baby index.html">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://www.newsx.com/wp-content/uploads/2024/02/Untitled-design-16.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" ></i>
+            </div>
+            <div class="text">
+              <h3>Baby John </h3>
+              <div class="time flex">
+                <span>2hrs 27mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action,Thriller</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+    </div>
+  </section>
+
+
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <!-- Owl Carousel -->
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        411: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+  <section class="new_realase top">
+    <div class="container">
+      <div class="owl-carousel owl-carousel2 owl-theme">
+        <div class="items">
+          <div class="left">
+            <div class="img">
+              <img src="assests/main tumhara.jpg" alt="">
+            </div>
+            <div class="heading">
+              <h2> <span></span>MOST AWAITED MOVIE OF THE YEAR</h2>
+              <h1>MAIN TUMHARA</h1>
+            </div>
+            <div class="time flex">
+              <label>U</label>
+              <i class="fas fa-circle"></i>
+              <span>1hrs 50mins</span>
+              <i class="fas fa-circle"></i>
+
+              <p>2024</p>
+              <i class="fas fa-circle"></i>
+              <button>Romance,Drama</button>
+            </div>
+
+            <p>"Main Tumhara" unfolds a tale of timeless love, where two souls find solace in each other's hearts amidst life's chaos. 
+              Their journey through passion and pain showcases the resilience of true affection. Set against a backdrop of enchanting melodies and poignant moments, the film captures the essence of love's enduring power. 
+              "Main Tumhara" is a heartfelt ode to the unbreakable bonds that bind lovers through the trials of destiny.
+            </p>
+
+            <div class="button flex">
+              <button class="btn">BOOK TICKETS</button>
+              <i id="palybtn" ></i>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 20,
+      dots: true,
+      items: 1
+    })
+  </script>
+
+
+
+  <section class="popular mtop">
+    <div class="container ">
+      <div class="heading flex1">
+        <h2>Suggestions For You</h2>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <a href="ALL MOVIES INDEX PAGES/Leo/index.html">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://i0.wp.com/moviegalleri.net/wp-content/uploads/2023/06/Thalapathy-Vijay-LEO-Movie-First-Look-Poster-HD.jpg?ssl=1" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" ></i>
+            </div>
+            <div class="text">
+              <h3>LEO</h3>
+              <div class="time flex">
+                <span>2hrs 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action,Thriller</a>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="item">
+          <a href="ALL MOVIES INDEX PAGES/rrr/index.html">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://w0.peakpx.com/wallpaper/830/395/HD-wallpaper-rrr-movie-rrr.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" ></i>
+            </div>
+            <div class="text">
+              <h3>RRR</h3>
+              <div class="time flex">
+                <span>2hrs 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action,Drama</a>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="item">
+          <a href="ALL MOVIES INDEX PAGES/Bahubali 2/index.html">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://moviegalleri.net/wp-content/gallery/baahubali-2-movie-april-28-release-posters/rana-daggubati-prabhas-in-baahubali-2-movie-april-28-release-wallpapers.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" ></i>
+            </div>
+            <div class="text">
+              <h3>Bahubali 2:The Conclusion</h3>
+              <div class="time flex">
+                <span>2hrs 40mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action,Drama</a>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="item">
+          <a href="ALL MOVIES INDEX PAGES/sarkaru vari pata/index.html">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://m.media-amazon.com/images/M/MV5BMmM2MGIzODktODA5OS00MWQxLWI5YTUtYmE3YjA4ZWI5OTkwXkEyXkFqcGdeQXVyMTUwMDg3OTQy._V1_.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" ></i>
+            </div>
+            <div class="text">
+              <h3>Sarkaru Vari Paata</h3>
+              <div class="time flex">
+                <span>2hrs 37mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="item">
+          <a href="ALL MOVIES INDEX PAGES/pokiri/index.html">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/old_images/MOVIE/4125/1000064125/1000064125-h" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" ></i>
+            </div>
+            <div class="text">
+              <h3>Pokiri</h3>
+              <div class="time flex">
+                <span>2hrs 25mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        414: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+
+
+  <footer>
+    <div class="container mtop">
+      <div class="box">
+        <div class="logo">
+         
+        </div>
+        <p> 
+          Welcome to Ticket Venuma, your ultimate destination for booking movie tickets effortlessly. Discover the latest blockbusters, browse showtimes, and secure your seats with just a few clicks. Enjoy a seamless and user-friendly experience as you explore our wide range of cinema options. Get ready for a memorable movie night with Ticket Venuma!</p>
+
+      </div>
+
+    
+
+    </div>
+  </footer>
+</body>
+
+</html>

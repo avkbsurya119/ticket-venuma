@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color: linear-gradient(0deg, transparent, rgba(184, 184, 184, 0.2));
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1f2025;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #E50916;
+    color: #151515;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    height: 35px;
+}
+
+.logo {
+    font-size: 1.0rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    position: relative; 
+    display: flex; 
+    margin-top: -8px;
+}
+
+.location {
+    font-size: 0.8rem;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    display: ruby-base-container;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #E50916;
+}
+
+
+.contact {
+    height: 100vh;
+    color: #151515;
+    padding: 20px;
+}
+
+.sticky {
+    color: #E50916;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    z-index: 1000;
+}
+
+header.sticky {
+    display: none;
+    background-color: transparent;
+    color: #E50916;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.sticky .logo {
+    font-size: 1.2rem;
+}
+
+.active {
+    color: #E50916;
+}
+
+
+.book {
+    width: 92%;
+    height: 90%;
+    display: flex;
+}
+
+.book .left, .right {
+    position: relative;
+    height: 100%;
+}
+
+.book .left {
+    width: 20%;
+    background: #2e3037;
+}
+
+.book .left img {
+    width: 100%;
+    opacity: 80%;
+}
+
+.book .left .play {
+    position: relative;
+    left: 44%;
+    top: -25px;
+    background: #fd6565;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 0px 0px 20px #fd6565;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+
+.book .left .play:hover {
+    transform: rotate(360deg);
+}
+
+.book .left .cont {
+    color: #fff;
+    padding: 0 20px;
+}
+
+.book .left .cont h6 {
+    font-size: 13px;
+}
+
+.book .left .cont p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.book .right {
+    width: 80%;
+    padding: 10px 40px;
+    background: unset;
+}
+
+.book .right .top {
+    position: absolute;
+    width: 95%;
+    height: 250px;
+    background: url(https://images.mubicdn.net/images/film/391603/cache-912268-1706619649/image-w1280.jpg?size=800x) no-repeat center -30px / cover;
+    opacity: 0.5;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+
+.book .right .top::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.book .right .date_type, .book .right .head_time {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ff0000;
+}
+
+.book .right .head_time {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.book .right .head_time::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 250px;
+    top: 0;
+    right: -25px;
+    background: linear-gradient(90deg, transparent, #1f2025);
+    z-index: -9;
+}
+
+.book .right .head_time::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 250px;
+    top: 0;
+    left: -25px;
+    background: linear-gradient(270deg, transparent, #1f2025);
+    z-index: -9;
+}
+
+.book .right .head_time h1 {
+    font-weight: 600;
+}
+
+.book .right .head_time .time {
+    display: flex;
+    align-items: center;
+}
+
+.book .right .head_time .time h6 {
+    font-size: 13px;
+    margin-right: 15px;
+}
+
+.book .right .head_time .time h6 i {
+    margin-right: 10px;
+}
+
+.book .right .head_time .time button {
+    padding: 4px 10px;
+    border-radius: 10px;
+    border: 2px solid #fd6565;
+    background: none;
+    font-size: 11px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s linear;
+}
+
+.book .right .head_time .time button:hover {
+    background: #0033ff;
+}
+
+.book .right .date_type {
+    position: absolute;
+    display: contents;
+    align-items: center;
+    justify-content: stretch;
+    font-weight: 600;
+    border: 1px solid #ff4136;
+}
+
+.book .right .movie-t {
+    color: #fff;
+}
+
+.book .right .crd {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    border-top: 1px solid rgba(184, 184, 184, 0.2);
+    padding: 5px 0;
+}
+
+.book .right .crd::-webkit-scrollbar {
+    height: 3px;
+    background: rgba(184, 184, 184, 0.2);
+}
+
+.book .right .crd::-webkit-scrollbar-thumb {
+    height: 3px;
+    background: rgba(184, 184, 184, 0.5);
+}
+
+.book .right .crd li {
+    list-style: none;
+    color: #fff;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.book .right .crd li h6:nth-child(2) {
+    background: transparent;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    transition: 0.3s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.book .right .crd li h6:nth-child(2):hover {
+    background: #fd6565;
+}
+
+.book .right .date_type .right_card li h6:nth-child(2) {
+    border-radius: 8px;
+    padding: 1px 5px 0 5px;
+}
+
+.h6_active {
+    background: #fd6565 !important;
+}
+
+.screen {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    border-top: 3px solid #fd6565;
+    margin-top: 50px;
+    border-radius: 20%;
+    overflow: hidden;
+    box-shadow: inset 0px 10px 20px var(--color);
+    text-align: center;
+    padding-top: 15px;
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+.book .right .chair {
+    width: 95%;
+    margin: auto;
+    color: #fff;
+    justify-content: center;
+}
+
+.book .right .chair .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.book .right .chair .row li {
+    position: relative;
+    width: 20px;
+    height: 15px;
+    background: rgba(184, 184, 184, 0.3);
+    list-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s linear;
+    font-size: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.book .right .chair .row li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: rgba(184, 184, 184, 0.1);
+    bottom: -8px;
+    border-radius: 10px;
+}
+
+.book .right .chair .row li:hover {
+    background: greenyellow;
+    color: #000;
+}
+
+.book .right .chair .row li:nth-child(6) {
+    margin-right: 20px;
+}
+
+.book .right .chair .row li:nth-last-child(6) {
+    margin-left: 20px;
+}
+
+.book .right .chair .row span {
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.book .right .chair .booked {
+    background: #fd6565 !important;
+}
+
+.book .right .chair .selected {
+    background: greenyellow !important;
+    color: #000 !important;
+}
+
+.book .right .details {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book .right .details .details_chair {
+    display: flex;
+    align-items: center;
+}
+
+.book .right .details .details_chair li {
+    position: relative;
+    list-style-type: none;
+    border-radius: 5px;
+    transition: 0.3s linear;
+    margin: 0 25px;
+    font-weight: 600;
+    font-size: 12px;
+    color: rgba(184, 184, 184, 0.3);
+}
+
+.book .right .details .details_chair li::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 15px;
+    background: rgba(184, 184, 184, 0.3);
+    border-radius: 5px;
+    left: -30px;
+    top: 2px;
+    transition: 0.3s linear;
+}
+
+.book .right .details .details_chair li::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 4px;
+    background: rgba(184, 184, 184, 0.1);
+    border-radius: 10px;
+    left: -30px;
+    bottom: -5px;
+    transition: 0.3s linear;
+}
+
+.book .right .details .details_chair li:nth-child(2)::before,
+.book .right .details .details_chair li:nth-child(2)::after {
+    background: #fd6565;
+}
+
+.book .right .details .details_chair li:nth-child(3)::before,
+.book .right .details .details_chair li:nth-child(3)::after {
+    background: greenyellow;
+}
+
+.book .right .book_tic {
+    position: absolute;
+    right: 5%;
+    bottom: 40px;
+    padding: 8px 9.5px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: #fd6565;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.book .right .book_tic:hover {
+    color: #000;
+}
+
+nav {
+    width: 90%;
+    height: 70px;
+    margin: auto;
+    background: rgba(184, 184, 184, 0.1);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+nav a span {
+    color: skyblue;
+}
+
+.cards {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cards .card {
+    min-width: 130px;
+    height: 180px;
+    border-radius: 8px;
+    margin-right: 10px;
+    background: #000;
+    transition: 0.3s linear;
+    margin-top: 10px;
+}
+
+.cards .card img {
+    width: 100%;
+    height: 100%;
+}
+
+.book_tic {
+    position: absolute;
+    bottom: 20px;
+    padding: 8px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: #fd6565;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.book_tic:hover {
+    background-color: #ff4136;
+}
+
+.book_tic i {
+    font-size: 24px;
+}
+
+#book_ticket,
+#back_ticket {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background: #fd6565;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    justify-content: space-evenly;
+}
+
+#book_ticket:hover,
+#back_ticket:hover {
+    background: #ff8080;
+}
+
+.chair .h3 {
+    color: #fff;
+}

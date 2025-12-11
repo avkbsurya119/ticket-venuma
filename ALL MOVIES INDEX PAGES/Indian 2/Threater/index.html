@@ -1,0 +1,49 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Schedule</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-sN8T+DrMkCpPTVr+02iZ3R6Qb6OQCq2JUa+iH5kzP5El9DDV4TGN5dYo7IjR1aTt" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="file:///W:\Semester 2\UID\TicketVenumma\home.html" class="logo">TicketVenuma</a>
+        <span class="location">Coimbatore</span>
+        <nav>
+            <ul>
+                <li><a href="file:///W:\Semester 2\UID\TicketVenumma\home.html">Home</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="header">
+            <img id="poster-image" src="" alt="Movie Poster">
+            <div class="header-content">
+                <h1 id="movie-title">Movie Title</h1>
+                <p id="movie-genre">Movie Genre</p>
+                <p id="release-date">Release Date: 24th May, 2024</p>
+            </div>
+        </div>               
+        <div class="schedule">
+            <div class="filter-buttons" id="filter-buttons">
+                <!-- Date buttons will be injected here by JavaScript -->
+            </div>
+            <div class="timing-buttons" id="timing-buttons">
+                <!-- Timing buttons will be injected here by JavaScript -->
+            </div>
+            <div id="schedule-items">
+                <!-- Schedule items will be injected here by JavaScript -->
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe id="location-iframe" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

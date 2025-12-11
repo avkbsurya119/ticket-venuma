@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-XXX" crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <a href="file:///W:\Semester 2\UID\TicketVenumma\home.html" class="logo">TicketVenuma</a>
+        <span class="location">Coimbatore</span>
+        <nav>
+            <ul>
+                <li><a href="file:///W:\Semester 2\UID\TicketVenumma\home.html">Home</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="movie-header">
+            <div class="overlay"></div>
+            <img src="https://imgs.search.brave.com/Y3Cf9chExHuhPdIJAUcqgcvTh6jtIRj4UkzObfM-7bE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMxLnNyY2RuLmNv/bS93b3JkcHJlc3Mv/d3AtY29udGVudC91/cGxvYWRzLzIwMjMv/MTIvYW5pbWFsLTIw/MjMtbW92aWUtcG9z/dGVyLXNob3dpbmct/YS1tYW4td2l0aC1h/LWxpZ2h0ZXItc21v/a2luZy1hLWNpZ2Fy/ZXR0ZS5qcGVn" alt="Animal" class="poster">
+            <div class="movie-info">
+                <h1 id="movie-title">Animal</h1>
+                <div class="rating-container">
+                    <p class="rating">9.2/10 (195.3K Votes)</p>
+                    <button id="rate-now-button" class="btn">Rate Now</button>
+                </div>
+                <div id="rating-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" id="close-rating-form-btn">Submit</span>
+                        <iframe src="rating_form.html"></iframe>
+                    </div>
+                </div>
+                <p><b>🕰️3h 21m</p></b>
+                <p class="genre">Action, Drama, Violence</p>
+                <p class="release-date">Release Date: 1st December, 2023</p>
+                <div class="languages">
+                    <span>Languages:</span>
+                    <span>Telugu</span>
+                    <span>Hindi</span>
+                    <span>Tamil</span>
+                    <span> Kannada</span>
+                    <span>Malayalam</span>
+                </div>
+                <div class="formats">
+                    <span>Formats: </span>
+                    <span>2D</span>
+                </div>
+                <div class="actions">
+                    <button id="book-tickets-button" class="btn">Book Tickets</button>
+                    <button id="watch-trailer-button" class="btn play-btn"><i class="fas fa-play"></i> Trailer</button>
+                </div>
+            </div>
+        </div>
+        <div class="movie-description">
+            <h2>About the movie</h2>
+            <p>
+                This is the story of a son whose love for his father knows no bounds. As their bond begins to fracture, a chain of extraordinary events unfold causing the son to undergo a remarkable transformation consumed by a thirst for vengeance.
+            </p>
+        </div>
+        <div class="cast">
+            <h2>Cast</h2>
+            <div id="cast-list" class="cast-list">
+            </div>
+        </div>
+        <div class="crew">
+            <h2>Crew</h2>
+            <div id="crew-list" class="crew-list">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

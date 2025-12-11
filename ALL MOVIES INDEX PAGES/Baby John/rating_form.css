@@ -1,0 +1,72 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container {
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+    background-color: #151515;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: flex-start; /* Align container to the left */
+    flex-wrap: wrap; /* Allow wrapping of form groups */
+}
+
+h1 {
+    color: #E50916;
+    margin-bottom: 30px;
+    width: 100%; /* Full width for the heading */
+}
+
+.form-group {
+    margin-bottom: 30px;
+    width: 100%; /* Full width for form groups */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+input[type="range"] {
+    width: calc(100% - 30px); /* Adjust width of range input */
+    -webkit-appearance: none;
+    appearance: none;
+    height: 20px;
+    background: #2A2A2A;
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="number"],
+textarea {
+    width: calc(100% - 30px); /* Adjust width of text inputs */
+    padding: 15px;
+    border: 1px solid #E50916;
+    border-radius: 8px;
+    background-color: #151515;
+    color: #fff;
+    font-size: 16px;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #FFD700;
+    color: #151515;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    margin-left: 10px; /* Add some margin to the left of the button */
+}
+
+button:hover {
+    background-color: #FFA500;
+}

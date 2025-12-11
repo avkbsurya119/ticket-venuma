@@ -1,0 +1,278 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0E0E10;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    overflow: hidden;
+    background: #0E0E10;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+
+header {
+    background-color: #E50916;
+    color: #151515;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    height: 35px;
+}
+
+.logo {
+    font-size: 1.0rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    position: relative; 
+    display: flex; 
+    margin-top: -8px;
+}
+
+.location {
+    font-size: 0.8rem;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    display: ruby-base-container;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #E50916;
+}
+
+
+.contact {
+    height: 100vh;
+    color: #151515;
+    padding: 20px;
+}
+
+.sticky {
+    color: #E50916;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    z-index: 1000;
+}
+
+header.sticky {
+    display: none;
+    background-color: transparent;
+    color: #E50916;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.sticky .logo {
+    font-size: 1.2rem;
+}
+
+.active {
+    color: #E50916;
+}
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.ytimg.com/vi/eZcUXoYVGyg/maxresdefault.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 2rem;
+    display: flex;
+    align-items: center; 
+    height: 400px;
+}
+
+
+.header-content {
+    flex: 1; 
+    padding-left: 2rem; 
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+#poster-image {
+    width: 280px;
+    height: auto;
+    border: px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.schedule {
+    background: #0E0E10;
+    padding: 1rem;
+    color: #FFFFFF;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.schedule-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.schedule-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.schedule-item div {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.schedule-item .info-button {
+    background: none;
+    border: none;
+    color: #FFD600;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.schedule-item .info-button:hover {
+    color: #E50916;
+}
+
+.schedule-item .times {
+    text-align: right;
+}
+
+.schedule-item .times button {
+    background: #E50916;
+    color: #FFFFFF;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.schedule-item .times button:hover {
+    background-color: #2e2c26a2;
+}
+
+/* Filter buttons styling */
+.filter-buttons, .timing-buttons {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.filter-buttons button, .timing-buttons button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #E50916;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.filter-buttons button:hover, .timing-buttons button:hover {
+    background-color: #2e2c26a2;
+}
+
+.filter-buttons button.active, .timing-buttons button.active {
+    background: none;
+    color: #ffffff;
+    border-bottom: 2px solid #E50916;
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background-color: #FFFFFF;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #AAAAAA;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+}

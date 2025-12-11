@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text with Line Example</title>
+<style>
+  .text-with-line {
+    display: inline-block;
+    position: relative;
+
+  }
+  
+  .text-with-line span {
+    position: relative;
+  }
+
+  .text-with-line span:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px; /* Adjust this value to control the space between the text and the line */
+    width: 10%;
+    border-bottom: 1px solid rgb(34, 0, 255); /* Adjust line style and color as needed */
+  }
+</style>
+</head>
+<body>
+
+<div class="text-with-line">
+  <span>This text has a line below it.</span>
+</div>
+
+</body>
+</html>
