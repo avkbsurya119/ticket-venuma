@@ -139,7 +139,6 @@ The built application will be generated in the `home-win32-x64` folder.
 | **HTML5** | Page structure and content |
 | **CSS3** | Styling and animations |
 | **JavaScript** | Interactive functionality |
-| **Google Maps API** | Theater location display |
 
 ---
 
