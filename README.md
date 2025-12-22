@@ -26,7 +26,6 @@ A modern **movie ticket booking desktop application** built using Electron, HTML
   - Today
   - Tomorrow
   - Day After
-- **Google Maps integration** inside a modal for location viewing
 
 ### 🎟️ Ticket Booking Flow
 - Interactive seat selection interface
